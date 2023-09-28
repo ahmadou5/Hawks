@@ -18,10 +18,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: whitesmoke;
+  scroll-behavior: smooth;
+
+}
+
+#bg {
+  
+  background: rgb(255,255,255);
+  background: linear-gradient(63deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 4%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 22%, rgba(255,255,255,1) 27%, rgba(225,225,249,1) 48%, rgba(159,220,255,1) 72%, rgba(145,206,231,1) 81%, rgba(131,218,232,1) 85%, rgba(120,205,237,1) 97%);
 }

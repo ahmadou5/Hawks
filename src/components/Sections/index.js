@@ -197,17 +197,17 @@ export const Footer = ({}) => {
       <div className="w-[35%]  ml-auto mr-auto">
           <div className="ml-0 mr-auto">
             <div className="lg:text-xl text-base font-extrabold mb-3 lg:mb-[30px]">Socials</div>
-            { SocialLinks.map((social) => (
-                <div className="lg:text-md text-sm lg:mt-6 mt-3 font-light">{social.name}</div>
+            { SocialLinks.map((social,i) => (
+                <div key={i} className="lg:text-md text-sm lg:mt-6 mt-3 font-light">{social.name}</div>
             ))}
           </div>
       </div>
       <div className="w-[40%] mb-10 ml-auto mr-auto">
           <div className="ml-0 mr-auto">
             <div className="lg:text-xl text-base font-extrabold flex mb-3 lg:mb-[30px]">Products</div>
-            { Features.map((feature) => (
+            { Features.map((feature,i) => (
               <div className="flex flex-row">
-                <div className=" flex lg:text-md text-sm lg:mt-6 mt-3 font-light">
+                <div key={i} className=" flex lg:text-md text-sm lg:mt-6 mt-3 font-light">
                   <p className="ml-1 lg:ml-1 mr-1 lg:mr-1">{feature.name}</p>
                   <div className={` ${feature.status === 'Coming Soon' && 'lg:w-[105px] w-[60px]'} ${feature.status === 'Coming Soon' && 'bg-slate-400'} ${feature.status === 'Coming Soon' && 'text-black'} w-[49px] h-[14px]  rounded-3xl lg:text-[10px] text-[8px]  text-white bg-green-400 `}>{feature.status}</div>
                 </div>

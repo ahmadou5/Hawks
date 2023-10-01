@@ -6,7 +6,7 @@ export const BCard = ({ source, alt }) => {
   return (
     <div className="lg:w-[88%] w-[98%] h-auto ml-auto mr-auto bg-transparent backdrop-blur-3xl drop-shadow-3xl py-0 px-0 rounded-lg lg:h-[600px]">
       <img
-        className="lg:w-[100%] w-auto rounded-lg h-auto lg:h-[100%]"
+        className="lg:w-[100%] w-full h-full rounded-lg lg:h-[100%]"
         src="./carb3.svg"
         alt={alt}
       />
@@ -18,7 +18,7 @@ export const SCard = ({ source, alt, text }) => {
   return (
     <div className="lg:w-[290px] w-[250px] mt-5 mb-5 flex items-center flex-col drop-shadow-2xl shadow-2xl ml-auto mr-auto bg-white backdrop-blur-3xl drop-shadow-3xl py-0 px-0 rounded-lg h-[400px] lg:h-[430px]">
       <img
-        className="lg:w-[40%] w-[70%] lg:mt-20 mt-16 mb-3 mr-auto ml-auto rounded-2xl h-[40%] lg:h-[20%]"
+        className="lg:w-[40%] w-42 lg:mt-20 mt-6 mb-3 mr-auto ml-auto rounded-2xl h-42 lg:h-[20%]"
         src={source}
         alt={alt}
       />

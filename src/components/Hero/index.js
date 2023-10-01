@@ -2,6 +2,7 @@ import { Button } from "../Buttons";
 import { BCard } from "../Cards";
 import carbon from "./assets";
 
+
 export const Hero = () => {
   return (
     <div id="bg" className="w-[100%] h-auto lg:h-[1400px] mt-20 text-2xl">

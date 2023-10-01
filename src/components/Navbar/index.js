@@ -9,7 +9,7 @@ export const Navbar = () => {
       {/**for mobile view **/}
       <div
         style={{ "backdrop-filter": "blur(12px)" }}
-        className=" bg-clip-padding bg-opacity-5 z-10 fixed text-black sm:flex w-[100%] h-20 lg:hidden md:hidden"
+        className=" backdrop-blur-lg bg-clip-padding bg-opacity-60 z-10 fixed text-black sm:flex w-[100%] h-20 lg:hidden md:hidden"
       >
         <div className="w-[98%] flex flex-row mt-1 py-2 px-2 ml-auto mr-auto h-[90%]">
           <div className="ml-0 mr-auto mt-auto mb-auto">
@@ -25,7 +25,7 @@ export const Navbar = () => {
       {/**for desktop view **/}
       <div
         style={{ "backdrop-filter": "blur(12px)" }}
-        className=" bg-clip-padding bg-opacity-5 fixed z-10 text-black lg:flex md:flex hidden w-[100%] h-20"
+        className=" bbackdrop-blur-lg bg-clip-padding bg-opacity-60 fixed z-10 text-black lg:flex md:flex hidden w-[100%] h-20"
       >
         <div className="py-5 px-5  mt-auto mb-auto ml-auto mr-auto w-[98%] flex flex-row  h-[90%]">
           <div className="ml-0 mr-auto">

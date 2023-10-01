@@ -8,7 +8,7 @@ export const Navbar = () => {
     <>
       {/**for mobile view **/}
       <div
-        style={{ "backdrop-filter": "blur(12px)" }}
+        style={{ "backdropFilter":"blur(1200px)" }}
         className=" bg-clip-padding bg-opacity-5 z-10 fixed text-black sm:flex w-[100%] h-20 lg:hidden md:hidden"
       >
         <div className="w-[98%] flex flex-row mt-1 py-2 px-2 ml-auto mr-auto h-[90%]">

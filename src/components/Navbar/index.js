@@ -17,12 +17,12 @@ export const Navbar = () => {
       >
         <div className="w-[98%] flex flex-row mt-1 py-2 px-2 ml-auto mr-auto h-[90%]">
           <div className="ml-0 mr-auto mt-auto mb-auto">
-            <div className="text-md font-semibold">Devs Hawk</div>
+            <div className="text-2xl font-semibold">Devs Hawk</div>
           </div>
           <div className="mr-2 ml-auto mt-auto mb-auto">
             <div className="flex flex-row">
               <p className="ml-2  mr-2">
-                <RiMenuLine className="h-9 w-9" />
+                <RiMenuLine className="h-8 w-8" />
               </p>
             </div>
           </div>

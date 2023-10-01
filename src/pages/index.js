@@ -2,7 +2,8 @@ import Image from 'next/image'
 import { Inter,Poppins } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
-import { How, Why } from '@/components/Sections'
+import { Contact, Footer, How, Learn, Subscribe, Why } from '@/components/Sections'
+import { Divider } from '@/components/Divider'
 const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({ subsets: ['latin'] , weight: '200' })
 
@@ -16,7 +17,10 @@ export default function Home() {
       <Hero />
       <How />
       <Why />
-      Welcome to Hawks
+      <Learn />
+      <Subscribe />
+      <Divider />
+      <Footer />
     </main>
   )
 }

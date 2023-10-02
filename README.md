@@ -1,4 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/ahmadou5/hawks)](https://github.com/ahmadou5/hawks/releases)
+![GitHub repo size](https://img.shields.io/github/repo-size/ahmadou5/hawks)
+
+**Welcome to Project `Devs Hawk`**(please update your local git clones with the new remote name)
+
+![Devs Hawk logo on a sticker](https://as1.ftcdn.net/v2/jpg/05/82/04/08/1000_F_582040828_lrq5idiP8OUvZzye88tLpH0Fe3b99pSG.jpg)
+
+# What is Devs Hawk?
+
+A platform where people in tech can have a single hub to showcase their content in order to accelerate their career, whilst contributing to an Open Source project and being part of a community that has a say in where the project is going.
+
+Your profile will have links to your social media and content. You can also add your timeline, testimonials, and upcoming events that you are participating in.
+
+Here is an example of a BioDrop Profile https://biodrop.io/eddiejaoude
 
 ## Getting Started
 

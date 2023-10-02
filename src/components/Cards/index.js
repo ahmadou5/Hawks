@@ -7,7 +7,7 @@ export const BCard = ({ source, alt }) => {
     <div className="lg:w-[88%] w-[98%] h-auto ml-auto mr-auto bg-transparent backdrop-blur-3xl drop-shadow-3xl py-0 px-0 rounded-lg lg:h-[600px]">
       <img
         className="lg:w-[100%] w-full h-full rounded-lg lg:h-[100%]"
-        src="./carv.png"
+        src="./carb1.svg"
         alt={alt}
       />
     </div>

@@ -4,7 +4,7 @@
 
 **Welcome to Project `Devs Hawk`**(please update your local git clones with the new remote name)
 
-![Devs Hawk logo on a sticker](https://as1.ftcdn.net/v2/jpg/05/82/04/08/1000_F_582040828_lrq5idiP8OUvZzye88tLpH0Fe3b99pSG.jpg)
+![Devs Hawk logo on a sticker](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-SbnVllTw88IgSTCMQ5vo_Mkw241a0-M0Pxcml_46qgQeevztx5lqAIrT3ADEldo1ruo&usqp=CAU)
 
 # What is Devs Hawk?
 

@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { Button } from "../Buttons";
 
 export const BCard = ({ source, alt }) => {
@@ -7,7 +7,7 @@ export const BCard = ({ source, alt }) => {
     <div className="lg:w-[88%] w-[98%] h-auto ml-auto mr-auto bg-transparent backdrop-blur-3xl drop-shadow-3xl py-0 px-0 rounded-lg lg:h-[600px]">
       <img
         className="lg:w-[100%] w-full h-full rounded-lg lg:h-[100%]"
-        src="./carb3.svg"
+        src="./carv.png"
         alt={alt}
       />
     </div>
@@ -37,8 +37,7 @@ export const LCard = ({ source, alt, text }) => {
         alt={alt}
       />
       <p className="w-[80%] mt-10 mb-10 text-xl font-semibold">{text}</p>
-      <Button text={'Learn'} />
-      
+        <Button text={'Learn'} />
     </div>
   );
 };

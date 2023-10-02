@@ -1,12 +1,16 @@
 "use client";
 import { Button } from "../Buttons";
 import { RiMenuLine } from "react-icons/ri"
+import { NavList } from "../NavList";
+import { useState } from "react";
 
 
 
 export const Navbar = () => {
+  const [show,setShow] = useState(false)
   const handleClick = () => {
     console.log("hacker in disguise");
+    setShow(!show)
   };
   return (
     <>
@@ -21,12 +25,13 @@ export const Navbar = () => {
           </div>
           <div className="mr-2 ml-auto mt-auto mb-auto">
             <div className="flex flex-row">
-              <p className="ml-2  mr-2">
+              <p onClick={handleClick} className="ml-2  mr-2">
                 <RiMenuLine className="h-8 w-8" />
               </p>
             </div>
           </div>
         </div>
+        { show && <NavList />}
       </div>
       {/**for desktop view **/}
       <div

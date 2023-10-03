@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "../Buttons";
-import { RiMenuLine } from "react-icons/ri"
+import { RiMenuLine } from "react-icons/ri";
 import { NavList } from "../NavList";
 import { useState } from "react";
 import Link from "next/link";

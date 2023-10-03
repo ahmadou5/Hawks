@@ -1,0 +1,141 @@
+[33mcommit e754abf98a3d29f14f8b49221f5d3b0cb931e81b[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Mon Oct 2 12:17:12 2023 +0300
+
+    'new77ca'
+
+[33mcommit cf486c30c0f8ae4d7895b1af3c828e8b64ad4f5c[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Mon Oct 2 12:10:48 2023 +0300
+
+    'Ui2'
+
+[33mcommit 0c6934ee627b530d1f3c82d439b2cec0a9dc4686[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Mon Oct 2 11:44:44 2023 +0300
+
+    'githubworkflow'
+
+[33mcommit c22f429912d87e44092ae1673205024a5f225a05[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Mon Oct 2 06:35:47 2023 +0300
+
+    'new77ca'
+
+[33mcommit af786d918d7e4fb6ff13eada0f5a034f5ea9108b[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Mon Oct 2 06:23:46 2023 +0300
+
+    'Ui'
+
+[33mcommit 77cef26640e5a5d94f253c728ba7b7a14e783fa1[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Mon Oct 2 05:33:02 2023 +0300
+
+    'NavList-added'
+
+[33mcommit 4dab73554b6198ed1881584c14b576abb6ae1dac[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Mon Oct 2 04:45:43 2023 +0300
+
+    'new77ca'
+
+[33mcommit 9befea353eefc70fc8dd82e97828f3ea718a24f3[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Mon Oct 2 04:41:44 2023 +0300
+
+    'new329'
+
+[33mcommit 7aaedf80931dc86222e6f40853c963bad81b7ae3[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Mon Oct 2 04:32:01 2023 +0300
+
+    'new77'
+
+[33mcommit abf0e070ec75fe520b8fee79c1d1d8c7b62bbc9d[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Sun Oct 1 20:20:42 2023 +0300
+
+    'new456'
+
+[33mcommit 3036758a8f6e3224274aef239e2218d8ca7ff4fe[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Sun Oct 1 20:13:10 2023 +0300
+
+    'new32'
+
+[33mcommit d49c5c914d4495120b1463b4bc9ab13885cbcd9a[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Sun Oct 1 19:54:29 2023 +0300
+
+    'new2'
+
+[33mcommit 970c52b440a80d74bc75cbfaf8bc0a7cbd166fa2[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Sun Oct 1 19:45:01 2023 +0300
+
+    'new'
+
+[33mcommit 79b6012d384900386a932784f81e186679cfb647[m
+Merge: 18d360d 68d5cb1
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Sun Oct 1 12:45:28 2023 +0300
+
+    'from9dev'
+
+[33mcommit 18d360d96e963bbf59a514c1a89582a928fa20a1[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Sun Oct 1 12:42:47 2023 +0300
+
+    'from9dev'
+
+[33mcommit 68d5cb13bac2aa19f38169ab5a348e7a6ebb1dde[m
+Merge: 049bcd2 c33ac00
+Author: ahmadou5 <78315869+ahmadou5@users.noreply.github.com>
+Date:   Sun Oct 1 08:44:52 2023 +0100
+
+    Merge pull request #5 from ahmadou5/ahmadou5-patch-1
+    
+    Create .eslintignore
+
+[33mcommit c33ac00e3421d0793ae36e9859f849aef437811b[m[33m ([m[1;31morigin/ahmadou5-patch-1[m[33m)[m
+Author: ahmadou5 <78315869+ahmadou5@users.noreply.github.com>
+Date:   Sun Oct 1 08:44:12 2023 +0100
+
+    Create .eslintignore
+
+[33mcommit 049bcd23688c5e508f2556a177442e8022ad7298[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Sun Oct 1 10:28:35 2023 +0300
+
+    'from2dev'
+
+[33mcommit faa8ef945e8c5e30514985297b5ca5cf8c52fbae[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Sun Oct 1 10:23:27 2023 +0300
+
+    'from-dev'
+
+[33mcommit 0d97d730be173fd7e20ffb8475b8965429155b6d[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Thu Sep 28 09:54:28 2023 +0300
+
+    1====23
+
+[33mcommit 2065d62ed044c9cf3cc8b3252510e9e1845a7888[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Thu Sep 28 09:47:46 2023 +0300
+
+    1====2
+
+[33mcommit 4ed88895e84e58bd7516f40573ebf231110ef2ff[m[33m ([m[1;32mmaster[m[33m)[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Thu Sep 28 09:43:00 2023 +0300
+
+    1====
+
+[33mcommit 74406d4d2d07da55141f9018aca6f7d543dadc8d[m
+Author: ahmadou5 <ahmadlasauwal@gmail.com>
+Date:   Thu Sep 21 04:40:19 2023 +0300
+
+    Initial commit from Create Next App

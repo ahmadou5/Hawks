@@ -8,9 +8,8 @@ import Link from "next/link";
 
 
 export const Navbar = () => {
-  const [show,setShow] = useState(false)
+  const [show,setShow] = useState(false);
   const handleClick = () => {
-    console.log("hacker in disguise");
     setShow(!show)
   };
 

@@ -42,7 +42,7 @@ export const NavList = () => {
             <div key={i} className=" h-10 text-xl cursor-pointer hover:font-light  font-bold py-1 mt-2 mb-2 ">{feauture.name}</div>
             ))}
             </div>
-            <Button onClick={navigate('/login')} text={'Sign In'}/>
+            <Button onClick={navigate('/auth')} text={'Sign In'}/>
         </div>
     </div>
     )

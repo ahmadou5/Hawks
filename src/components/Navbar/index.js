@@ -14,8 +14,6 @@ export const Navbar = () => {
     setShow(!show)
   };
 
-  
- 
 
   const Pages = [
     

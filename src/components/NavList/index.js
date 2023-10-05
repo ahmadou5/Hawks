@@ -1,7 +1,5 @@
-'use client'
 import { Button } from "../Buttons"
 import { Link } from 'next/link'
- 
 export const NavList = () => {
     const Pages = [
         {
@@ -31,8 +29,7 @@ export const NavList = () => {
         },
       ]
 
-    
-    
+
     return(
     <div className="w-[100%] bg-gray-100 py-6 px-4 h-[700px] text-center lg:hidden">
         <div className="w-[80%] h-[80%] py-6 px-4  ml-auto mr-auto mb-10">
@@ -42,7 +39,7 @@ export const NavList = () => {
             ))}
             </div>
             <Link href={'/auth'}>
-              <Button onClick={navigate('/auth')} text={'Sign In'}/>
+              <Button text={'Sign In'}/>
             </Link>
         </div>
     </div>

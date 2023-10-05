@@ -86,7 +86,7 @@ export const Navbar = () => {
           </div>
           <div className="mr-3 ml-20 mb-auto mt-auto">
             <Link href={'/auth'}>
-              <Button text={"Sign in"} click={navigate('/auth')} />
+              <Button text={"Sign in"}  />
             </Link>
           </div>
         </div>

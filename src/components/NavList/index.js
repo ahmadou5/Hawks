@@ -1,3 +1,4 @@
+'use client'
 import { Button } from "../Buttons"
 import { Router } from "next/router"
 

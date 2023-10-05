@@ -15,9 +15,9 @@ export const Navbar = () => {
     setShow(!show)
   };
 
-  const router = Router
+  
     const navigate = (to) => {
-      router.push(to)
+      Router.push(to)
     }
   const Pages = [
     

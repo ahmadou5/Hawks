@@ -31,9 +31,9 @@ export const NavList = () => {
         },
       ]
 
-    const router = Router
+    
     const navigate = (to) => {
-      router.push(to);
+      Router.push(to);
     }
     return(
     <div className="w-[100%] bg-gray-100 py-6 px-4 h-[700px] text-center lg:hidden">

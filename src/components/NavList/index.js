@@ -1,5 +1,5 @@
 import { Button } from "../Buttons"
-import { useRouter } from "next/router"
+import { Router } from "next/router"
 
 export const NavList = () => {
     const Pages = [
@@ -30,7 +30,7 @@ export const NavList = () => {
         },
       ]
 
-    const router = useRouter()
+    const router = Router
     const navigate = (to) => {
       router.push(to);
     }

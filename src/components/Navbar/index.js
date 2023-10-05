@@ -4,7 +4,7 @@ import { RiMenuLine } from "react-icons/ri";
 import { NavList } from "../NavList";
 import { useState } from "react";
 import Link from "next/link";
-import Router, { useRouter } from "next/router";
+import Router from "next/router";
 
 
 

@@ -4,6 +4,7 @@ import { RiMenuLine } from "react-icons/ri";
 import { NavList } from "../NavList";
 import { useState } from "react";
 import Link from "next/link";
+import Router from "next/router";
 
 
 
@@ -13,6 +14,11 @@ export const Navbar = () => {
     console.log("hacker in disguise");
     setShow(!show)
   };
+
+  const router = Router
+    const navigate = (to) => {
+      router.push(to)
+    }
   const Pages = [
     
     {
@@ -83,7 +89,7 @@ export const Navbar = () => {
             </div>
           </div>
           <div className="mr-3 ml-20 mb-auto mt-auto">
-            <Button text={"Sign in"} click={handleClick} />
+            <Button text={"Sign in"} click={navigate('/auth')} />
           </div>
         </div>
       </div>

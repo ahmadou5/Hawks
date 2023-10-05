@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getAuth, GithubAuthProvider } from "firebase/auth";
 
 
 export const firebaseConfig = {
@@ -13,6 +14,7 @@ export const firebaseConfig = {
 
 
 export const app = initializeApp(firebaseConfig);
+
 
 
 

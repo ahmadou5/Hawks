@@ -1,5 +1,6 @@
+'use client'
 import { Button } from "../Buttons"
-import { useRouter } from "next/router"
+import { Router } from "next/router"
 
 export const NavList = () => {
     const Pages = [
@@ -30,7 +31,7 @@ export const NavList = () => {
         },
       ]
 
-    const router = useRouter()
+    const router = Router
     const navigate = (to) => {
       router.push(to);
     }
@@ -42,7 +43,7 @@ export const NavList = () => {
             <div key={i} className=" h-10 text-xl cursor-pointer hover:font-light  font-bold py-1 mt-2 mb-2 ">{feauture.name}</div>
             ))}
             </div>
-            <Button onClick={navigate('/login')} text={'Sign In'}/>
+            <Button onClick={navigate('/auth')} text={'Sign In'}/>
         </div>
     </div>
     )

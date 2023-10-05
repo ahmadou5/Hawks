@@ -13,6 +13,8 @@ export const Navbar = () => {
     console.log("hacker in disguise");
     setShow(!show)
   };
+
+
   const Pages = [
     
     {
@@ -83,7 +85,9 @@ export const Navbar = () => {
             </div>
           </div>
           <div className="mr-3 ml-20 mb-auto mt-auto">
-            <Button text={"Sign in"} click={handleClick} />
+            <Link href={'/auth'}>
+              <Button text={"Sign in"} click={navigate('/auth')} />
+            </Link>
           </div>
         </div>
       </div>

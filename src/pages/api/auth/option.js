@@ -9,7 +9,7 @@ export const authOption = {
             clientId: process.env.GOOGLE_ID,
             clientSecret: process.env.G_SECRET
         }),
-        CredentialsProvider({
+        {/**CredentialsProvider({
             name: 'Credentials',
             credentials: {
                 email: { label: "Email", type: "email", placeholder: "Enter your email address" },
@@ -29,6 +29,6 @@ export const authOption = {
         GithubProvider({
             clientId: process.env.GITHUB_CLIENT_ID,
             clientSecret: process.env.GITHUB_CLIENT_SECRET
-        })
+        })**/}
     ]
 }

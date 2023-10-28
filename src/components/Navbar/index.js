@@ -3,17 +3,37 @@ import { Button } from "../Buttons";
 import { RiMenuLine } from "react-icons/ri";
 import { NavList } from "../NavList";
 import { useState } from "react";
+import { useSession, signIn } from "next-auth/react";
 import Link from "next/link";
 
 
 
 export const Navbar = () => {
-  const [show,setShow] = useState(false)
+  const [show,setShow] = useState(false);
+  const [ShowD, setShowD] = useState(false)
+  
   const handleClick = () => {
-    console.log("hacker in disguise");
     setShow(!show)
   };
-
+  
+  const { data: session } = useSession()
+  console.log(session?.user.name)
+  const handleClick1 = () => {
+    try {
+        const signInRes = signIn('Google',{
+            redirect: false,
+            callbackUrl: '/',
+            
+        });
+        console.log(signInRes);
+        if(signInRes) {
+            router.push('/')
+        }
+    } catch (error) {
+        console.log(error)
+    }
+    
+}
 
   const Pages = [
     
@@ -77,20 +97,27 @@ export const Navbar = () => {
               <div className="text-xl">Devs Hawk</div>
             </Link>
           </div>
-          <div className="mr-4 ml-auto">
+          <div className="mr-4 ml-auto mt-auto mb-auto">
             <div className="flex flex-row">
               {Pages.map((page,i) => (
                   <p key={i} className="ml-2 mr-2 cursor-pointer hover:font-light font-bold text-lg">{page.name}</p>
               ))}
             </div>
           </div>
-          <div className="mr-3 ml-20 mb-auto mt-auto">
-            <Link href={'/auth'}>
-              <Button text={"Sign in"}  />
-            </Link>
-          </div>
+          {
+            session ? 
+            <div onClick={() => setShowD(!ShowD)} className="mr-3 ml-20 mb-auto mt-auto cursor-pointer">
+              <img className="w-9 h-9 rounded-full" src={session?.user.image} />
+            </div>
+            :
+            <div className="mr-3 ml-20 mb-auto mt-auto">
+              <Button click={() => handleClick1()} text={`${session ? 'Sign Out' : 'Sign In'}`}  />
+            </div>
+          }
+          
         </div>
       </div>
+      {ShowD && <NavList/>}
     </>
   );
 };

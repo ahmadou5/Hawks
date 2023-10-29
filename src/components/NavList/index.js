@@ -1,5 +1,6 @@
 import { Button } from "../Buttons"
 import { useRouter } from "next/router"
+import { useSession, signOut } from "next-auth/react"
 
 export const NavList = () => {
     const Pages = [
@@ -44,20 +45,46 @@ export const NavList = () => {
             <Button text={'Sign In'}/>
         </div>
     </div>
-    <div
+    </>
+    
+    )
+}
+
+
+
+export const SignCard = () => {
+
+  const Pages = [
+    {
+      name: 'Dashboard',
+      url: '',
+      status: 'Coming Soon',
+    },
+    {
+      name: 'Profile',
+      url: '',
+      status: 'Live',
+    },
+   
+  ]
+  const session = useSession()
+  const userData = session?.data.user
+  return(
+  <>
+  <div
       style={{ "backdrop-filter": "blur(12px)" }}
-      className="w-[40%] mt-24 bg-gray-100 py-6 bg-opacity-60 z-10 fixed  px-4 h-[450px] rounded-2xl text-center ">
+      className="w-[27%] mt-24 bg-gray-100 py-6 bg-opacity-60 z-10 fixed ml-[1100px]  px-4 h-[370px] rounded-2xl  ">
+        
         <div className="w-[80%] h-[80%] py-6 px-4  ml-auto mr-auto mb-10">
-            <div className="mb-8">
+        { session && <div className=" h-10 text-2xl text-black ml-4  font-bold py-1 mt-2 mb-6 ">{` 👋 Hello ${userData?.name}`}</div>}
+            <div className="mb-8 text-center">
             { Pages.map((feauture, i) => (
             <div key={i} className=" h-10 text-xl cursor-pointer hover:font-light text-black  font-bold py-1 mt-2 mb-2 ">{feauture.name}</div>
             ))}
             </div>
-            <Button text={'Sign Out'}/>
+            <Button click={() => signOut()} text={'Sign Out'}/>
         </div>
     </div>
-    
-    </>
-    
-    )
+  </>
+  )
 }

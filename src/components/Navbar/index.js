@@ -37,7 +37,7 @@ export const Navbar = () => {
 
   const Pages = [
     {
-      name: "Feutures '-' ",
+      name: "Feutures ",
       url: '',
       status: 'Live',
     },

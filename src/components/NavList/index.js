@@ -64,7 +64,7 @@ export const NavList = () => {
     return(
     <>
     <div className="w-[100%] bg-gray-100 py-6 px-4 h-[700px] text-center lg:hidden">
-        <div className="w-[80%] h-[80%] py-6 px-4  ml-auto mr-auto mb-10">
+        <div className="w-[83%] h-[80%] py-6 px-4  ml-auto mr-auto mb-10">
             {!session && 
               <div className="mb-16">
               {session && <>{session.user.email}</>}
@@ -78,7 +78,7 @@ export const NavList = () => {
             <div className="mr-auto ml-2 mb-auto mt-auto cursor-pointer">
               <img className="w-9 h-9 rounded-full" alt="profileImg" src={session?.user.image} />
             </div>
-            <div className="mt-auto text-xl font-semibold mb-auto ml-auto mr-auto">
+            <div className="mt-auto text-sm font-semibold mb-auto ml-auto mr-auto">
              👋 Hello {session?.user.name}
             </div>
             </div>

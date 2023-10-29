@@ -189,12 +189,12 @@ export const Footer = ({}) => {
   return(
     <div className="w-[100%] mb-[] text-center text-black mt-[40px] py-2 px-2 h-auto lg:h-[400px]" id="bg1">
       <div className="flex ">
-      <div className="w-[25%]   ml-auto mr-auto">
+      <div className="w-[40%]   ml-auto mr-auto">
           <div className="ml-0 mr-auto">
             <div className="lg:text-2xl text-base font-extrabold">Devs Hawk</div>
           </div>
       </div>
-      <div className="w-[35%]  ml-auto mr-auto">
+      <div className="w-[30%]  ml-auto mr-auto">
           <div className="ml-0 mr-auto">
             <div className="lg:text-2xl text-base font-extrabold mb-3 lg:mb-[30px]">Socials</div>
             { SocialLinks.map((social,i) => (
@@ -202,15 +202,14 @@ export const Footer = ({}) => {
             ))}
           </div>
       </div>
-      <div className="w-[40%] mb-10 ml-auto mr-auto">
+      <div className="w-[30%] mb-10 ml-auto mr-auto">
           <div className="ml-0 mr-auto">
             <div className="lg:text-2xl text-base font-extrabold flex mb-3 lg:mb-[30px]">Products</div>
             { Features.map((feature,i) => (
-              <div key={i} className="flex flex-row">
-                <div className=" flex lg:text-xl text-sm lg:mt-6 mt-3 font-light">
-                  <p className="ml-1 lg:ml-1 mr-1 lg:mr-1">{feature.name}</p>
-                  <div className={` ${feature.status === 'Coming Soon' && 'lg:w-[105px] w-[60px]'} -px-4 ${feature.status === 'Coming Soon' && 'bg-slate-400'} ${feature.status === 'Coming Soon' && 'text-black'} w-[49px] h-[14px]  rounded-3xl lg:text-[12px] text-[8px]  text-white bg-green-400 `}>{feature.status}</div>
-                </div>
+             
+                <div key={i} className=" flex lg:text-xl text-sm lg:mt-6 mt-3 font-light">
+                  {feature.name}
+                  {/**<div className={` ${feature.status === 'Coming Soon' && 'lg:w-[105px] w-[60px]'} -px-4 ${feature.status === 'Coming Soon' && 'bg-slate-400'} ${feature.status === 'Coming Soon' && 'text-black'} w-[49px] h-[14px]  rounded-3xl lg:text-[12px] text-[8px]  text-white bg-green-400 `}>{feature.status}</div> **/}
               </div>
             ))}
           </div>
@@ -218,7 +217,7 @@ export const Footer = ({}) => {
       </div>
       <Divider />
       <div>
-      <div className="mb-5 lg:mb-3 mt-4 flex text-xl  font-semibold">
+      <div className="mb-5 lg:mb-3 mt-4 flex lg:text-xl  font-semibold">
               <p className="mr-auto ml-[73px] ">
                 © {new Date().getFullYear()} Dev Hawks
               </p>

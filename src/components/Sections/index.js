@@ -26,10 +26,10 @@ export const How = () => {
   return (
     <div className="w-[100%] lg:mt-40 mt-20 mb-10 text-2xl text-black items-center text-center">
       <div>
-        <p className="font-extralight text-xl lg:text-5xl">How it Works</p>
+        <p className="font-extralight text-2xl lg:text-5xl">How it Works</p>
       </div>
       <div className="lg:w-[60%] w-[70%] ml-auto mr-auto mt-20">
-        <p className="font-extrabold text-2xl lg:text-4xl">
+        <p className="font-extrabold text-xl lg:text-4xl">
           Welcome to Devs Hawk The all-in-one Solution Providers for Developers
           and Recruiters.
         </p> 
@@ -77,10 +77,10 @@ export const Why = () => {
   return (
     <div className="w-[100%] lg:mt-[100px] mt:10 mb-10 text-2xl text-black items-center text-center">
       <div>
-        <p className="font-extralight text-xl lg:text-5xl ">Why Devs Hawk</p>
+        <p className="font-extralight text-2xl lg:text-5xl ">Why Devs Hawk</p>
       </div>
       <div className="lg:w-[80%] w-[85%] ml-auto mr-auto mt-10 lg:mt-20">
-        <p className="font-extrabold text-2xl lg:text-4xl">
+        <p className="font-extrabold text-xl lg:text-4xl">
           Collaborate, Contribute and Develop Your Programming Skills. Access to Global Mentors.  
         </p>
       </div>
@@ -113,14 +113,14 @@ export const Learn = () => {
   return(
     <div id="bg2" className="w-[100%] lg:mb-10 mb-5 mt-8 lg:mt-[100px] items-center text-center text-black h-auto lg:h-[1300px]">
       <div>
-        <p className="font-extralight mt-16 lg:mt-[120px] text-xl lg:text-5xl">Learn with Hawks</p>
+        <p className="font-extralight mt-16 lg:mt-[120px] text-2xl lg:text-5xl">Learn with Hawks</p>
       </div>
       <div className="lg:w-[60%] flex w-[70%] ml-auto mr-auto mt-16 lg:mt-20">
-        <p className="font-extrabold text-2xl lg:text-4xl">
+        <p className="font-extrabold text-xl lg:text-4xl">
           Explore Our Learning Resourece, Learn new Skill with Our Project Base Learning Pattern Build While you Learn.  
         </p>
       </div>
-      <div className="flex mt-20 lg:flex-row flex-col w-[95%] lg:w-[80%] ml-auto mr-auto">
+      <div className="flex mt-[90px]  lg:flex-row flex-col w-[95%] lg:w-[80%] ml-auto mr-auto">
         {SCardData.map((data, index) => (
           <LCard key={index} text={data.text} source={data.src} alt={data.name} />
         ))}
@@ -217,14 +217,14 @@ export const Footer = ({}) => {
       </div>
       <Divider />
       <div>
-      <div className="mb-5 lg:mb-3 mt-4 flex lg:text-xl  font-semibold">
-              <p className="mr-auto ml-[73px] ">
+      <div className="mb-5 lg:mb-3 mt-4 flex text-sm lg:text-xl  font-semibold">
+              <p className="mr-auto ml-4 lg:ml-[73px] ">
                 © {new Date().getFullYear()} Dev Hawks
               </p>
               <div className="mb-2 lg:mb-3 ml-5 flex flex-row font-semibold">
-             <div  className=" ml-auto mr-[73px]  flex flex-row">
+             <div  className=" ml-auto lg:mr-[73px] mr-4  flex flex-row">
               {SocialLinks.map((links, i) => (
-                <img key={i}  className="w-6 h-6 ml-2  mr-2 rounded-full" alt="dd" src={`./${links.url}`} />
+                <img key={i}  className="lg:w-6 lg:h-6 lg:ml-2 ml-1 mr-1  w-5 h-5  lg:mr-2 rounded-full" alt="dd" src={`./${links.url}`} />
               ))
               }
               </div>
@@ -239,10 +239,10 @@ export const Subscribe = () => {
   return(
     <div className="w-[100%] mb-5 lg:mt-[30px] text-xl lg:text-2xl items-center text-center text-black h-auto lg:h-[400px]" id="">
       <div>
-        <p className="font-extralight mt-[60px] text-5xl">Subscribe to Hawks</p>
+        <p className="font-extralight mt-[60px] text-2xl lg:text-5xl">Subscribe to Hawks</p>
       </div>
       <div className="lg:w-[60%] flex w-[88%] ml-auto mr-auto mt-[40px]">
-        <p className="font-extrabold text-2xl  lg:text-4xl">
+        <p className="font-extrabold text-xl  lg:text-4xl">
           Subscribe to our newsletter to get all the updates and news about Hawks.  
         </p>
       </div>

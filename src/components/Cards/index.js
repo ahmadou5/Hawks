@@ -16,13 +16,13 @@ export const BCard = ({ source, alt }) => {
 
 export const SCard = ({ source, alt, text }) => {
   return (
-    <div className="lg:w-[290px] w-[250px] mt-5 mb-5 flex items-center flex-col drop-shadow-2xl shadow-2xl ml-auto mr-auto bg-black text-white backdrop-blur-3xl drop-shadow-3xl py-0 px-0 rounded-lg h-[400px] lg:h-[430px]">
+    <div className="lg:w-[290px] w-[85%] mt-2 mb-3 flex items-center flex-col drop-shadow-2xl shadow-2xl ml-auto mr-auto bg-white text-black backdrop-blur-3xl drop-shadow-3xl py-0 px-0 rounded-lg h-[430px] lg:h-[430px]">
       <img
-        className="lg:w-[70%] w-42 lg:mt-20 mt-6 mb-3 mr-auto ml-auto rounded-2xl h-42 lg:h-[45%]"
+        className="lg:w-[70%] w-[80%] lg:mt-20 mt-2 mb-3 mr-auto ml-auto rounded-2xl h-[74%] lg:h-[45%]"
         src={source}
         alt={alt}
       />
-      <p className="w-[80%] mt-10 mb-3 text-xl lg:text-xl font-semibold">{text}</p>
+      <p className="w-[80%] mt-1 mb-3 text-lg lg:text-xl font-bold">{text}</p>
     </div>
   );
 };
@@ -36,7 +36,7 @@ export const LCard = ({ source, alt, text }) => {
         src={source}
         alt={alt}
       />
-      <p className="w-[80%] mt-10 mb-6 text-xl font-semibold">{text}</p>
+      <p className="w-[80%] mt-16 mb-6 text-sm  lg:text-xl font-semibold">{text}</p>
         <Button text={'Learn'} />
     </div>
   );
@@ -48,10 +48,10 @@ export const MCard = ({ text, name }) => {
       
       <div className="font-extrabold w-[80%] shadow-2xl ml-auto mr-auto bg-black drop-shadow-2xl text-white rounded-2xl text-4xl ">
         <div className=" lg:mt-5 mt-5 py-2 px-2 space-between ml-auto mr-auto  h-[78%] item w-[90%]">
-          <p className="lg:mt-[50px] bg-white rounded-full ml-auto mr-auto font-bold w-[200px] text-black text-xl lg:text-md mb-4 mt-6">
+          <p className="lg:mt-[50px] bg-white rounded-full ml-auto mr-auto font-bold w-[200px] text-black text-xl lg:text-md mb-18 mt-6">
             {name}
           </p>
-          <p className="lg:mt-[110px] ml-auto mr-auto font-extralight text-sm lg:text-xl mb-2">
+          <p className="lg:mt-[110px] mt-20 ml-auto mr-auto font-extralight text-sm lg:text-xl mb-2">
             {text}
           </p>
         </div>

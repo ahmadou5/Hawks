@@ -74,11 +74,11 @@ export const NavList = () => {
               </div>
             }
             { session && 
-            <div className="flex w-[94%] shadow-lg rounded-full h-12 mb-11 ml-auto mr-auto">
+            <div className="flex w-[96%] shadow-lg rounded-full h-12 mb-11 ml-auto mr-auto">
             <div className="mr-auto ml-2 mb-auto mt-auto cursor-pointer">
               <img className="w-9 h-9 rounded-full" alt="profileImg" src={session?.user.image} />
             </div>
-            <div className="mt-auto text-sm font-semibold mb-auto ml-auto mr-auto">
+            <div className="mt-auto text-sm font-semibold mb-auto ml-3 mr-auto">
              👋 Hello {session?.user.name}
             </div>
             </div>

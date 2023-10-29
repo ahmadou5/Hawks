@@ -16,13 +16,13 @@ export const BCard = ({ source, alt }) => {
 
 export const SCard = ({ source, alt, text }) => {
   return (
-    <div className="lg:w-[290px] w-[250px] mt-5 mb-5 flex items-center flex-col drop-shadow-2xl shadow-2xl ml-auto mr-auto bg-white backdrop-blur-3xl drop-shadow-3xl py-0 px-0 rounded-lg h-[400px] lg:h-[430px]">
+    <div className="lg:w-[290px] w-[250px] mt-5 mb-5 flex items-center flex-col drop-shadow-2xl shadow-2xl ml-auto mr-auto bg-black text-white backdrop-blur-3xl drop-shadow-3xl py-0 px-0 rounded-lg h-[400px] lg:h-[430px]">
       <img
-        className="lg:w-[40%] w-42 lg:mt-20 mt-6 mb-3 mr-auto ml-auto rounded-2xl h-42 lg:h-[20%]"
+        className="lg:w-[70%] w-42 lg:mt-20 mt-6 mb-3 mr-auto ml-auto rounded-2xl h-42 lg:h-[45%]"
         src={source}
         alt={alt}
       />
-      <p className="w-[80%] mt-10 mb-3 text-xl lg:text-3xl font-semibold">{text}</p>
+      <p className="w-[80%] mt-10 mb-3 text-xl lg:text-xl font-semibold">{text}</p>
     </div>
   );
 };
@@ -30,13 +30,13 @@ export const SCard = ({ source, alt, text }) => {
 
 export const LCard = ({ source, alt, text }) => {
   return (
-    <div className="w-[290px] mt-4 mb-4 flex items-center flex-col drop-shadow-3xl text-black shadow-2xl ml-auto mr-auto bg-white backdrop-blur-3xl drop-shadow-3xl py-0 px-0 rounded-lg h-[430px]">
+    <div className="w-[290px] mt-4 mb-4 flex items-center flex-col drop-shadow-3xl text-black shadow-2xl ml-auto mr-auto bg-white backdrop-blur-3xl drop-shadow-3xl py-0 px-0 rounded-lg h-[470px]">
       <img
-        className="w-[100%] mt-0 mb-3 mr-auto ml-auto drop-shadow-2xl shadow-2xl rounded-b-3xl h-[47%]"
+        className="w-[100%] mt-0 mb-3 mr-auto ml-auto drop-shadow-2xl shadow-2xl rounded-b-3xl h-[62%]"
         src={source}
         alt={alt}
       />
-      <p className="w-[80%] mt-10 mb-10 text-xl font-semibold">{text}</p>
+      <p className="w-[80%] mt-10 mb-6 text-xl font-semibold">{text}</p>
         <Button text={'Learn'} />
     </div>
   );

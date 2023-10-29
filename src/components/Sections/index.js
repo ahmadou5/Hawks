@@ -9,24 +9,24 @@ export const How = () => {
   const SCardData = [
     {
       name: "firts",
-      src: "./carb1.svg",
+      src: "./assets/hs1.png",
       text: "Contribute to OpenSource Projects.",
     },
     {
       name: "second",
-      src: "./carb2.svg",
+      src: "./assets/badge.png",
       text: "Earn Badges, Points and Exposure.",
     },
     {
       name: "third",
-      src: "./carb3.svg",
+      src: "./assets/deve.png",
       text: "Secure Your Very First Dream Job.",
     },
   ];
   return (
     <div className="w-[100%] lg:mt-40 mt-20 mb-10 text-2xl text-black items-center text-center">
       <div>
-        <p className="font-extralight text-xl lg:text-2xl">How it Works</p>
+        <p className="font-extralight text-xl lg:text-5xl">How it Works</p>
       </div>
       <div className="lg:w-[60%] w-[70%] ml-auto mr-auto mt-20">
         <p className="font-extrabold text-2xl lg:text-4xl">
@@ -77,7 +77,7 @@ export const Why = () => {
   return (
     <div className="w-[100%] lg:mt-[100px] mt:10 mb-10 text-2xl text-black items-center text-center">
       <div>
-        <p className="font-extralight text-xl lg:text-md ">Why Devs Hawk</p>
+        <p className="font-extralight text-xl lg:text-5xl ">Why Devs Hawk</p>
       </div>
       <div className="lg:w-[80%] w-[85%] ml-auto mr-auto mt-10 lg:mt-20">
         <p className="font-extrabold text-2xl lg:text-4xl">
@@ -86,7 +86,7 @@ export const Why = () => {
       </div>
       {
         data.map((data, i) => (
-          <MCard key={i} text={data.text} name={data.name} />
+          <MCard key={i}  text={data.text} name={data.name} />
         ))
       }
     </div>
@@ -96,24 +96,24 @@ export const Learn = () => {
   const SCardData = [
     {
       name: "firts",
-      src: "./carb1.svg",
-      text: "Intro to Internet.",
+      src: "./assets/rct.png",
+      text: "Intro to React.",
     },
     {
       name: "second",
-      src: "./carb2.svg",
+      src: "./assets/js.png",
       text: "Learn Javascript.",
     },
     {
       name: "third",
-      src: "./carb3.svg",
+      src: "./assets/py.png",
       text: "Learn Python.",
     },
   ]
   return(
     <div id="bg2" className="w-[100%] lg:mb-10 mb-5 mt-8 lg:mt-[100px] items-center text-center text-black h-auto lg:h-[1300px]">
       <div>
-        <p className="font-extralight mt-16 lg:mt-[120px] text-xl lg:text-md">Learn with Hawks</p>
+        <p className="font-extralight mt-16 lg:mt-[120px] text-xl lg:text-5xl">Learn with Hawks</p>
       </div>
       <div className="lg:w-[60%] flex w-[70%] ml-auto mr-auto mt-16 lg:mt-20">
         <p className="font-extrabold text-2xl lg:text-4xl">
@@ -196,20 +196,20 @@ export const Footer = ({}) => {
       </div>
       <div className="w-[35%]  ml-auto mr-auto">
           <div className="ml-0 mr-auto">
-            <div className="lg:text-xl text-base font-extrabold mb-3 lg:mb-[30px]">Socials</div>
+            <div className="lg:text-2xl text-base font-extrabold mb-3 lg:mb-[30px]">Socials</div>
             { SocialLinks.map((social,i) => (
-                <div key={i} className="lg:text-md text-sm lg:mt-6 mt-3 font-light">{social.name}</div>
+                <div key={i} className="lg:text-xl text-sm lg:mt-6 mt-3 font-light">{social.name}</div>
             ))}
           </div>
       </div>
       <div className="w-[40%] mb-10 ml-auto mr-auto">
           <div className="ml-0 mr-auto">
-            <div className="lg:text-xl text-base font-extrabold flex mb-3 lg:mb-[30px]">Products</div>
+            <div className="lg:text-2xl text-base font-extrabold flex mb-3 lg:mb-[30px]">Products</div>
             { Features.map((feature,i) => (
               <div key={i} className="flex flex-row">
-                <div className=" flex lg:text-md text-sm lg:mt-6 mt-3 font-light">
+                <div className=" flex lg:text-xl text-sm lg:mt-6 mt-3 font-light">
                   <p className="ml-1 lg:ml-1 mr-1 lg:mr-1">{feature.name}</p>
-                  <div className={` ${feature.status === 'Coming Soon' && 'lg:w-[105px] w-[60px]'} ${feature.status === 'Coming Soon' && 'bg-slate-400'} ${feature.status === 'Coming Soon' && 'text-black'} w-[49px] h-[14px]  rounded-3xl lg:text-[10px] text-[8px]  text-white bg-green-400 `}>{feature.status}</div>
+                  <div className={` ${feature.status === 'Coming Soon' && 'lg:w-[105px] w-[60px]'} -px-4 ${feature.status === 'Coming Soon' && 'bg-slate-400'} ${feature.status === 'Coming Soon' && 'text-black'} w-[49px] h-[14px]  rounded-3xl lg:text-[12px] text-[8px]  text-white bg-green-400 `}>{feature.status}</div>
                 </div>
               </div>
             ))}
@@ -218,14 +218,14 @@ export const Footer = ({}) => {
       </div>
       <Divider />
       <div>
-      <div className="mb-2 lg:mb-3 mt-4 flex  font-semibold">
+      <div className="mb-5 lg:mb-3 mt-4 flex text-xl  font-semibold">
               <p className="mr-auto ml-[73px] ">
                 © {new Date().getFullYear()} Dev Hawks
               </p>
               <div className="mb-2 lg:mb-3 ml-5 flex flex-row font-semibold">
              <div  className=" ml-auto mr-[73px]  flex flex-row">
               {SocialLinks.map((links, i) => (
-                <img key={i}  className="w-8 h-8 ml-2  mr-2 rounded-full" alt="dd" src={`./${links.url}`} />
+                <img key={i}  className="w-6 h-6 ml-2  mr-2 rounded-full" alt="dd" src={`./${links.url}`} />
               ))
               }
               </div>
@@ -240,7 +240,7 @@ export const Subscribe = () => {
   return(
     <div className="w-[100%] mb-5 lg:mt-[30px] text-xl lg:text-2xl items-center text-center text-black h-auto lg:h-[400px]" id="">
       <div>
-        <p className="font-extralight mt-[60px] text-xl">Subscribe to Hawks</p>
+        <p className="font-extralight mt-[60px] text-5xl">Subscribe to Hawks</p>
       </div>
       <div className="lg:w-[60%] flex w-[88%] ml-auto mr-auto mt-[40px]">
         <p className="font-extrabold text-2xl  lg:text-4xl">

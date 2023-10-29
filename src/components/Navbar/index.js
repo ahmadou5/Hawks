@@ -36,7 +36,11 @@ export const Navbar = () => {
 }
 
   const Pages = [
-    
+    {
+      name: "Feutures '-' ",
+      url: '',
+      status: 'Live',
+    },
     {
       name: 'Courses',
       url: '',
@@ -46,11 +50,6 @@ export const Navbar = () => {
       name: 'Events',
       url: '',
       status: 'Coming Soon',
-    },
-    {
-      name: 'Contact',
-      url: '',
-      status: 'Live',
     },
     {
       name: 'About',

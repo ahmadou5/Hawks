@@ -36,7 +36,7 @@ export const LCard = ({ source, alt, text }) => {
         src={source}
         alt={alt}
       />
-      <p className="w-[80%] mt-10 mb-6 text-xl font-semibold">{text}</p>
+      <p className="w-[80%] mt-16 mb-6 text-sm  lg:text-xl font-semibold">{text}</p>
         <Button text={'Learn'} />
     </div>
   );
@@ -48,10 +48,10 @@ export const MCard = ({ text, name }) => {
       
       <div className="font-extrabold w-[80%] shadow-2xl ml-auto mr-auto bg-black drop-shadow-2xl text-white rounded-2xl text-4xl ">
         <div className=" lg:mt-5 mt-5 py-2 px-2 space-between ml-auto mr-auto  h-[78%] item w-[90%]">
-          <p className="lg:mt-[50px] bg-white rounded-full ml-auto mr-auto font-bold w-[200px] text-black text-xl lg:text-md mb-4 mt-6">
+          <p className="lg:mt-[50px] bg-white rounded-full ml-auto mr-auto font-bold w-[200px] text-black text-xl lg:text-md mb-18 mt-6">
             {name}
           </p>
-          <p className="lg:mt-[110px] ml-auto mr-auto font-extralight text-sm lg:text-xl mb-2">
+          <p className="lg:mt-[110px] mt-20 ml-auto mr-auto font-extralight text-sm lg:text-xl mb-2">
             {text}
           </p>
         </div>

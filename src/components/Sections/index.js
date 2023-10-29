@@ -136,23 +136,23 @@ export const Footer = ({}) => {
   const SocialLinks = [
     {
       name: 'X',
-      url: '',
+      url: '/assets/x.png',
     },
     {
       name: 'Tiktok',
-      url: '',
+      url: '/assets/tik.jpg',
     },
     {
       name: 'Instagram',
-      url: '',
+      url: '/assets/ig2.svg',
     },
     {
       name: 'Discord',
-      url: '',
+      url: '/assets/d3.png',
     },
     {
       name: 'Github',
-      url: '',
+      url: '/assets/github.png',
     },
 
   ]
@@ -162,7 +162,7 @@ export const Footer = ({}) => {
   const Features = [
     {
       name: 'Learn',
-      url: '',
+      url: 'carb1.svg',
       status: 'Coming Soon',
     },
     {
@@ -187,7 +187,7 @@ export const Footer = ({}) => {
     },
   ]
   return(
-    <div className="w-[100%] mb-0 text-center text-black mt-[70px] py-2 px-2 h-auto lg:h-[400px]" id="bg1">
+    <div className="w-[100%] mb-[] text-center text-black mt-[40px] py-2 px-2 h-auto lg:h-[400px]" id="bg1">
       <div className="flex ">
       <div className="w-[25%]   ml-auto mr-auto">
           <div className="ml-0 mr-auto">
@@ -218,18 +218,17 @@ export const Footer = ({}) => {
       </div>
       <Divider />
       <div>
-      <div className="mb-2 lg:mb-3 ml-6 mt-4 flex flex-row font-semibold">
-              <p className="w-[45%] ">
+      <div className="mb-2 lg:mb-3 mt-4 flex  font-semibold">
+              <p className="mr-auto ml-[73px] ">
                 © {new Date().getFullYear()} Dev Hawks
               </p>
               <div className="mb-2 lg:mb-3 ml-5 flex flex-row font-semibold">
-            {/**  <div  className="w-[15%] ml-auto mr-16 flex flex-row">
-              {Features.map((links, i) => (
-                <img key={i}  className="w-6 h-6 ml-1 mr-1" alt="dd" src={`./${links.url}`} />
-                
+             <div  className=" ml-auto mr-[73px]  flex flex-row">
+              {SocialLinks.map((links, i) => (
+                <img key={i}  className="w-8 h-8 ml-2  mr-2 rounded-full" alt="dd" src={`./${links.url}`} />
               ))
               }
-              </div> **/}
+              </div>
       </div>
       </div>
       </div>

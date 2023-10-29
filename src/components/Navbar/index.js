@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "../Buttons";
 import { RiMenuLine } from "react-icons/ri";
-import { NavList } from "../NavList";
+import { NavList, SignCard } from "../NavList";
 import { useState } from "react";
 import { useSession, signIn } from "next-auth/react";
 import Link from "next/link";
@@ -38,22 +38,12 @@ export const Navbar = () => {
   const Pages = [
     
     {
-      name: 'Feutures',
+      name: 'Courses',
       url: '',
       status: 'Live',
     },
     {
-      name: 'About',
-      url: '',
-      status: 'Coming Soon',
-    },
-    {
-      name: 'Event',
-      url: '',
-      status: 'Coming Soon',
-    },
-    {
-      name: 'Jobs',
+      name: 'Events',
       url: '',
       status: 'Coming Soon',
     },
@@ -61,6 +51,11 @@ export const Navbar = () => {
       name: 'Contact',
       url: '',
       status: 'Live',
+    },
+    {
+      name: 'About',
+      url: '',
+      status: 'Coming Soon',
     },
   ]
   return (
@@ -107,7 +102,7 @@ export const Navbar = () => {
           {
             session ? 
             <div onClick={() => setShowD(!ShowD)} className="mr-3 ml-20 mb-auto mt-auto cursor-pointer">
-              <img className="w-9 h-9 rounded-full" src={session?.user.image} />
+              <img className="w-9 h-9 rounded-full" alt="profileImg" src={session?.user.image} />
             </div>
             :
             <div className="mr-3 ml-20 mb-auto mt-auto">
@@ -117,7 +112,7 @@ export const Navbar = () => {
           
         </div>
       </div>
-      {ShowD && <NavList/>}
+      {ShowD && <SignCard/>}
     </>
   );
 };

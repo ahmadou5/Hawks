@@ -38,24 +38,8 @@ export const LoginCard = () => {
 }
 
 export const Login = () => {
-    const router = useRouter()
-    const handleClick = () => {
-        try {
-            const signInRes = signIn('Google',{
-                redirect: false,
-                callbackUrl: '/',
-                username: '',
-                password:  '' ,
-            });
-            console.log(signInRes);
-            if(signInRes) {
-                router.push('/')
-            }
-        } catch (error) {
-            console.log(error)
-        }
-        
-    }
+    
+    
     return(
     <div className="w-[90%] mt-10 h-[60%] ml-auto mr-auto">
         <div className="mt-[100px]">

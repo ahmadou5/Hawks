@@ -15,10 +15,10 @@ export const Hero = () => {
         {/** content view */}
         <div className="w-[100%] mt-20 mb-4 lg:mt-32 lg:mb-8 text-black text-center h-">
           <div className="mt-6 mb-6">
-            <p className="font-extralight text-xl lg:text-7xl">Your Gateway to Opensource</p>
+            <p className="font-extralight text-3xl lg:text-7xl">Your Gateway to Opensource</p>
           </div>
           <div className="mt-20 mb-18 w-[85%] lg:w-[70%] ml-auto mr-auto">
-            <p className="mt-2 mb-2 font-extrabold text-md lg:text-3xl">
+            <p className="mt-2 mb-2 font-extrabold text-xl lg:text-3xl">
               Number One Opensource Developers Scouting Community over the
               Galaxy. We aim to Escape the Matrix.
             </p>

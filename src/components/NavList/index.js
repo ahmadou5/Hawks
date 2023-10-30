@@ -103,7 +103,7 @@ export const NavList = () => {
             
            {!session && 
              <Button click={() => {
-              signIn('Github',
+              signIn('Google',
               {
                 redirect: false,
                 callbackUrl: '/'

@@ -43,7 +43,7 @@ export const Navbar = () => {
     },
     {
       name: 'Courses',
-      url: '',
+      url: 'courses',
       status: 'Live',
     },
     {
@@ -94,7 +94,11 @@ export const Navbar = () => {
           <div className="mr-4 ml-auto mt-auto mb-auto">
             <div className="flex flex-row">
               {Pages.map((page,i) => (
-                  <p key={i} className="ml-2 mr-2 cursor-pointer hover:font-light font-bold text-lg">{page.name}</p>
+                  <p key={i} className="ml-2 mr-2 cursor-pointer hover:font-light font-bold text-lg">
+                    <Link href={page.url}>
+                    {page.name}
+                    </Link>
+                  </p>
               ))}
             </div>
           </div>

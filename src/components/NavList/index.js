@@ -1,6 +1,7 @@
 import { Button } from "../Buttons"
 import { useRouter } from "next/router"
 import { useSession, signIn, signOut } from "next-auth/react"
+import Link from "next/link"
 
 
 
@@ -48,7 +49,7 @@ export const NavList = () => {
 
         {
           name: 'Courses',
-          url: '',
+          url: '/courses',
           status: 'Coming Soon',
         },
        
@@ -69,7 +70,11 @@ export const NavList = () => {
               <div className="mb-16">
               {session && <>{session.user.email}</>}
               { Pages.map((feauture, i) => (
-              <div key={i} className=" h-10 text-xl cursor-pointer hover:font-light  font-bold py-1 mt-2 mb-2 ">{feauture.name}</div>
+              <p key={i} className="ml-2 mr-2 cursor-pointer bg-black hover:font-light font-bold text-lg">
+              <Link href={feauture.url}>
+                {feauture.name}
+              </Link>
+            </p>
               ))}
               </div>
             }
@@ -87,7 +92,11 @@ export const NavList = () => {
               <div className="mb-28">
               
               { Pages2.map((feauture, i) => (
-              <div key={i} className=" h-10 text-xl cursor-pointer hover:font-light  font-bold py-1 mt-2 mb-2 ">{feauture.name}</div>
+              <div key={i} className=" h-10 text-xl cursor-pointer hover:font-light  font-bold py-1 mt-2 mb-2 ">
+                <Link href={feauture.url}>
+                  {feauture.name}
+                </Link>
+                </div>
               ))}
               </div>
             }
@@ -124,12 +133,12 @@ export const SignCard = () => {
   const Pages = [
     {
       name: 'Dashboard',
-      url: '',
+      url: '/',
       status: 'Coming Soon',
     },
     {
       name: 'Profile',
-      url: '',
+      url: '/',
       status: 'Live',
     },
    
@@ -146,7 +155,11 @@ export const SignCard = () => {
         { session && <div className=" h-10 text-2xl text-black ml-4  font-bold py-1 mt-2 mb-6 ">{` 👋 Hello ${userData?.name}`}</div>}
             <div className="mb-8 text-center">
             { Pages.map((feauture, i) => (
-            <div key={i} className=" h-10 text-xl cursor-pointer hover:font-light text-black  font-bold py-1 mt-2 mb-2 ">{feauture.name}</div>
+              <div className=" h-10 text-xl cursor-pointer hover:font-light text-black  font-bold py-1 mt-2 mb-2 ">
+                <Link key={i} href={feauture.url}>
+                {feauture.name}
+                </Link>
+              </div>
             ))}
             </div>
             <Button click={() => signOut()} text={'Sign Out'}/>

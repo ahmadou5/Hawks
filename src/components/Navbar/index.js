@@ -20,7 +20,7 @@ export const Navbar = () => {
   console.log(session?.user.name)
   const handleClick1 = () => {
     try {
-        const signInRes = signIn('Google',{
+        const signInRes = signIn('Github',{
             redirect: false,
             callbackUrl: '/',
             

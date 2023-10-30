@@ -70,7 +70,7 @@ export const NavList = () => {
               <div className="mb-16">
               {session && <>{session.user.email}</>}
               { Pages.map((feauture, i) => (
-              <p key={i} className="ml-2 mr-2 cursor-pointer bg-black hover:font-light font-bold text-lg">
+              <p key={i} className="ml-2 mr-2 cursor-pointer text-black hover:font-light font-bold text-lg">
               <Link href={feauture.url}>
                 {feauture.name}
               </Link>

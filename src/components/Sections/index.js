@@ -217,9 +217,9 @@ export const Footer = ({}) => {
       </div>
       <Divider />
       <div>
-      <div className="mb-5 lg:mb-3 mt-4 flex text-sm lg:text-xl  font-semibold">
+      <div className="mb-5 lg:mb-3 mt-4 flex text-sm lg:text-lg  font-semibold">
               <p className="mr-auto ml-4 lg:ml-[73px] ">
-                © {new Date().getFullYear()} Dev Hawks
+                Copyright © {new Date().getFullYear()} Devs Hawk | All Right Reserved
               </p>
               <div className="mb-2 lg:mb-3 ml-5 flex flex-row font-semibold">
              <div  className=" ml-auto lg:mr-[73px] mr-4  flex flex-row">

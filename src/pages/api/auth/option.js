@@ -5,10 +5,10 @@ import CredentialsProvider from "next-auth/providers/credentials"
 export const authOption = {
     
     providers : [
-        GoogleProvider({
+        {/**GoogleProvider({
             clientId: process.env.GOOGLE_ID,
             clientSecret: process.env.G_SECRET,
-        }),
+        }),**/},
         GithubProvider({
             clientId: process.env.GITHUB_CLIENT_ID,
             clientSecret: process.env.GITHUB_CLIENT_SECRET

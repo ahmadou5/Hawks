@@ -48,7 +48,7 @@ export const Navbar = () => {
     },
     {
       name: 'Events',
-      url: '',
+      url: 'events',
       status: 'Coming Soon',
     },
     {
